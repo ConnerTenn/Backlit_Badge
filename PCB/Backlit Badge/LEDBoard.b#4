@@ -39,7 +39,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
@@ -170,6 +170,7 @@
 <dimension x1="0" y1="98" x2="10" y2="98" x3="5" y3="98" textsize="1.4224" layer="47"/>
 <dimension x1="0" y1="-3" x2="80" y2="-3" x3="40" y3="-3" textsize="1.778" layer="47"/>
 <dimension x1="83" y1="0" x2="83" y2="100" x3="83" y3="50" textsize="1.778" layer="47"/>
+<dimension x1="86" y1="96" x2="86" y2="100" x3="86" y3="98" textsize="1.778" layer="47"/>
 </plain>
 <libraries>
 <library name="wirepad" urn="urn:adsk.eagle:library:412">

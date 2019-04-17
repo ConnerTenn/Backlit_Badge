@@ -163,7 +163,7 @@
 <text x="52.2" y="88.5" size="0.7" layer="52" rot="MR0">T</text>
 <text x="32.2" y="88.5" size="0.7" layer="52" rot="MR0">T</text>
 <text x="12.2" y="88.5" size="0.7" layer="52" rot="MR0">T</text>
-<text x="14" y="9" size="1.4224" layer="52" rot="MR0">Charlie Tenn</text>
+<text x="14" y="10" size="1.4224" layer="52" rot="MR0">Charlie Tenn</text>
 <dimension x1="0" y1="103" x2="32" y2="103" x3="16" y3="103" textsize="1.4224" layer="47"/>
 <dimension x1="48" y1="103" x2="80" y2="103" x3="64" y3="103" textsize="1.4224" layer="47"/>
 <dimension x1="70" y1="98" x2="80" y2="98" x3="75" y3="98" textsize="1.4224" layer="47"/>
@@ -171,6 +171,7 @@
 <dimension x1="0" y1="-3" x2="80" y2="-3" x3="40" y3="-3" textsize="1.778" layer="47"/>
 <dimension x1="83" y1="0" x2="83" y2="100" x3="83" y3="50" textsize="1.778" layer="47"/>
 <dimension x1="86" y1="96" x2="86" y2="100" x3="86" y3="98" textsize="1.778" layer="47"/>
+<text x="14" y="8" size="1.4224" layer="52" rot="MR0">Version 0.0.0</text>
 </plain>
 <libraries>
 <library name="wirepad" urn="urn:adsk.eagle:library:412">

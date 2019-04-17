@@ -4156,8 +4156,6 @@ Source: www.kingbright.com</description>
 <junction x="38.1" y="73.66"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <junction x="30.48" y="73.66"/>
-<wire x1="17.78" y1="63.5" x2="17.78" y2="73.66" width="0.1524" layer="91"/>
-<junction x="17.78" y="73.66"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>

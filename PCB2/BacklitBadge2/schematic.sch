@@ -3755,6 +3755,11 @@ Source: www.kingbright.com</description>
 <sheets>
 <sheet>
 <plain>
+<text x="-58.42" y="119.38" size="1.778" layer="91">To Do:
+add Pushbutton
+add main switch
+Research thermistor
+add programming pads</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="17.78" y="35.56" smashed="yes"/>
@@ -4330,6 +4335,10 @@ Source: www.kingbright.com</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

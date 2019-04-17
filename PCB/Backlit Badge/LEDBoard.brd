@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -172,6 +172,7 @@
 <dimension x1="83" y1="0" x2="83" y2="100" x3="83" y3="50" textsize="1.778" layer="47"/>
 <dimension x1="86" y1="96" x2="86" y2="100" x3="86" y3="98" textsize="1.778" layer="47"/>
 <text x="14" y="8" size="1.4224" layer="52" rot="MR0">Version 0.0</text>
+<dimension x1="75.4" y1="12.5" x2="76" y2="12.5" x3="75.7" y3="12.499996875" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="wirepad" urn="urn:adsk.eagle:library:412">
@@ -850,6 +851,10 @@ design rules under a new name.</description>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -950,94 +955,142 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="BATT+" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1" value="" x="77" y="33"/>
-<element name="BATT-" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1" value="" x="77" y="27"/>
-<element name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" package="SOT23" package3d_urn="urn:adsk.eagle:package:43389/2" value="" x="68.66" y="19.9" rot="MR180"/>
-<element name="Q1" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" package="SOT23" package3d_urn="urn:adsk.eagle:package:29213/2" value="MMBTA56-SOT23" x="12" y="89" rot="MR90"/>
-<element name="Q2" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" package="SOT23" package3d_urn="urn:adsk.eagle:package:29213/2" value="MMBTA56-SOT23" x="32" y="89" rot="MR90"/>
-<element name="Q3" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" package="SOT23" package3d_urn="urn:adsk.eagle:package:29213/2" value="MMBTA56-SOT23" x="52" y="89" rot="MR90"/>
-<element name="Q4" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" package="SOT23" package3d_urn="urn:adsk.eagle:package:29213/2" value="MMBTA56-SOT23" x="72" y="89" rot="MR90"/>
-<element name="R1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="" x="11" y="84" rot="MR90">
+<element name="BATT+" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1" value="" x="77" y="33" smashed="yes">
+<attribute name="NAME" x="75.73" y="34.524" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="77" y="34" size="0.0254" layer="27"/>
+</element>
+<element name="BATT-" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1" value="" x="77" y="27" smashed="yes">
+<attribute name="NAME" x="75.73" y="28.524" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="77" y="28" size="0.0254" layer="27"/>
+</element>
+<element name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" package="SOT23" package3d_urn="urn:adsk.eagle:package:43389/2" value="" x="68.66" y="19.9" smashed="yes" rot="MR180">
+<attribute name="NAME" x="66.755" y="17.995" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="66.755" y="23.075" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="Q1" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" package="SOT23" package3d_urn="urn:adsk.eagle:package:29213/2" value="MMBTA56-SOT23" x="12" y="89" smashed="yes" rot="MR90">
+<attribute name="NAME" x="13.905" y="87.095" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="8.825" y="87.095" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="Q2" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" package="SOT23" package3d_urn="urn:adsk.eagle:package:29213/2" value="MMBTA56-SOT23" x="32" y="89" smashed="yes" rot="MR90">
+<attribute name="NAME" x="33.905" y="87.095" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="28.825" y="87.095" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="Q3" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" package="SOT23" package3d_urn="urn:adsk.eagle:package:29213/2" value="MMBTA56-SOT23" x="52" y="89" smashed="yes" rot="MR90">
+<attribute name="NAME" x="53.905" y="87.095" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="48.825" y="87.095" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="Q4" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" package="SOT23" package3d_urn="urn:adsk.eagle:package:29213/2" value="MMBTA56-SOT23" x="72" y="89" smashed="yes" rot="MR90">
+<attribute name="NAME" x="73.905" y="87.095" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="68.825" y="87.095" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="" x="11" y="84" smashed="yes" rot="MR90">
+<attribute name="NAME" x="12.27" y="82.73" size="1.27" layer="26" rot="MR90"/>
 <attribute name="SPICEMODEL" value="NONE" x="11" y="84" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="11" y="84" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="8.46" y="82.73" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="" x="31" y="84" rot="MR90">
+<element name="R2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="" x="31" y="84" smashed="yes" rot="MR90">
+<attribute name="NAME" x="32.27" y="82.73" size="1.27" layer="26" rot="MR90"/>
 <attribute name="SPICEMODEL" value="NONE" x="31" y="84" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="31" y="84" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="28.46" y="82.73" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="" x="51" y="84" rot="MR90">
+<element name="R3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="" x="51" y="84" smashed="yes" rot="MR90">
+<attribute name="NAME" x="52.27" y="82.73" size="1.27" layer="26" rot="MR90"/>
 <attribute name="SPICEMODEL" value="NONE" x="51" y="84" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="51" y="84" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="48.46" y="82.73" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R4" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="" x="71" y="84" rot="MR90">
+<element name="R4" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="" x="71" y="84" smashed="yes" rot="MR90">
+<attribute name="NAME" x="72.27" y="82.73" size="1.27" layer="26" rot="MR90"/>
 <attribute name="SPICEMODEL" value="NONE" x="71" y="84" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="71" y="84" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="68.46" y="82.73" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R5" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="" x="14.8" y="40.76" rot="MR90">
+<element name="R5" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="" x="14.8" y="40.76" smashed="yes" rot="MR90">
+<attribute name="NAME" x="16.07" y="39.49" size="1.27" layer="26" rot="MR90"/>
 <attribute name="SPICEMODEL" value="NONE" x="14.8" y="40.76" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="14.8" y="40.76" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="12.26" y="39.49" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="SV1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA06-1" package3d_urn="urn:adsk.eagle:package:8340/1" value="" x="35" y="3">
+<element name="SV1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA06-1" package3d_urn="urn:adsk.eagle:package:8340/1" value="" x="35" y="3" smashed="yes">
 <attribute name="MF" value="" x="35" y="3" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="35" y="3" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="27.38" y="4.651" size="1.27" layer="25" ratio="10"/>
 <attribute name="OC_FARNELL" value="unknown" x="35" y="3" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="35" y="3" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="32.46" y="0.079" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="SV3" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA08-1" package3d_urn="urn:adsk.eagle:package:8343/1" value="" x="16" y="3" rot="R180">
+<element name="SV3" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA08-1" package3d_urn="urn:adsk.eagle:package:8343/1" value="" x="16" y="3" smashed="yes" rot="R180">
 <attribute name="MF" value="" x="16" y="3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="16" y="3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="26.16" y="1.349" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="OC_FARNELL" value="unknown" x="16" y="3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="16" y="3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="17.27" y="5.921" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="SV4" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA03-1" package3d_urn="urn:adsk.eagle:package:8339/1" value="" x="71" y="3">
+<element name="SV4" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA03-1" package3d_urn="urn:adsk.eagle:package:8339/1" value="" x="71" y="3" smashed="yes">
 <attribute name="MF" value="" x="71" y="3" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="71" y="3" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="67.19" y="4.651" size="1.27" layer="25" ratio="10"/>
 <attribute name="OC_FARNELL" value="unknown" x="71" y="3" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="71" y="3" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="67.19" y="0.079" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="U$1" library="Custom" package="TSSOP-24" value="IS31FL3726" x="21.28" y="39.73" rot="MR180"/>
-<element name="U$10" library="Custom" package="3528" value="3528LED" x="70" y="86"/>
-<element name="U$11" library="Custom" package="3528" value="3528LED" x="10" y="50"/>
-<element name="U$12" library="Custom" package="3528" value="3528LED" x="30" y="50"/>
-<element name="U$13" library="Custom" package="3528" value="3528LED" x="50" y="50"/>
-<element name="U$14" library="Custom" package="3528" value="3528LED" x="70" y="50"/>
-<element name="U$15" library="Custom" package="3528" value="3528LED" x="10" y="32"/>
-<element name="U$16" library="Custom" package="3528" value="3528LED" x="30" y="32"/>
-<element name="U$17" library="Custom" package="3528" value="3528LED" x="50" y="32"/>
-<element name="U$18" library="Custom" package="3528" value="3528LED" x="70" y="32"/>
-<element name="U$19" library="Custom" package="3528" value="3528LED" x="70" y="14"/>
-<element name="U$2" library="Custom" package="SOT233" value="AP2114H" x="55.98" y="19.75" rot="MR270"/>
-<element name="U$20" library="Custom" package="3528" value="3528LED" x="50" y="14"/>
-<element name="U$21" library="Custom" package="3528" value="3528LED" x="30" y="14"/>
-<element name="U$22" library="Custom" package="3528" value="3528LED" x="10" y="14"/>
-<element name="U$23" library="microusb" package="MICRO-USB" value="MICRO-USB" x="79" y="14" rot="MR270"/>
-<element name="U$3" library="Custom" package="3528" value="3528LED" x="10" y="68"/>
-<element name="U$4" library="Custom" package="3528" value="3528LED" x="30" y="68"/>
-<element name="U$5" library="Custom" package="3528" value="3528LED" x="50" y="68"/>
-<element name="U$6" library="Custom" package="3528" value="3528LED" x="70" y="68"/>
-<element name="U$7" library="Custom" package="3528" value="3528LED" x="10" y="86"/>
-<element name="U$8" library="Custom" package="3528" value="3528LED" x="30" y="86"/>
-<element name="U$9" library="Custom" package="3528" value="3528LED" x="50" y="86"/>
-<element name="U2" library="Custom" package="QFP80P900X900X120-32N" value="ATTINY828R-AU" x="41.52" y="20.11" rot="MR180">
+<element name="U$1" library="Custom" package="TSSOP-24" value="IS31FL3726" x="21.28" y="39.73" smashed="yes" rot="MR180"/>
+<element name="U$10" library="Custom" package="3528" value="3528LED" x="70" y="86" smashed="yes"/>
+<element name="U$11" library="Custom" package="3528" value="3528LED" x="10" y="50" smashed="yes"/>
+<element name="U$12" library="Custom" package="3528" value="3528LED" x="30" y="50" smashed="yes"/>
+<element name="U$13" library="Custom" package="3528" value="3528LED" x="50" y="50" smashed="yes"/>
+<element name="U$14" library="Custom" package="3528" value="3528LED" x="70" y="50" smashed="yes"/>
+<element name="U$15" library="Custom" package="3528" value="3528LED" x="10" y="32" smashed="yes"/>
+<element name="U$16" library="Custom" package="3528" value="3528LED" x="30" y="32" smashed="yes"/>
+<element name="U$17" library="Custom" package="3528" value="3528LED" x="50" y="32" smashed="yes"/>
+<element name="U$18" library="Custom" package="3528" value="3528LED" x="70" y="32" smashed="yes"/>
+<element name="U$19" library="Custom" package="3528" value="3528LED" x="70" y="14" smashed="yes"/>
+<element name="U$2" library="Custom" package="SOT233" value="AP2114H" x="55.98" y="19.75" smashed="yes" rot="MR270"/>
+<element name="U$20" library="Custom" package="3528" value="3528LED" x="50" y="14" smashed="yes"/>
+<element name="U$21" library="Custom" package="3528" value="3528LED" x="30" y="14" smashed="yes"/>
+<element name="U$22" library="Custom" package="3528" value="3528LED" x="10" y="14" smashed="yes"/>
+<element name="U$23" library="microusb" package="MICRO-USB" value="MICRO-USB" x="79" y="14" smashed="yes" rot="MR270">
+<attribute name="NAME" x="78.5" y="19.2" size="0.762" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="78.5" y="8.8" size="0.762" layer="28" rot="MR0" align="top-left"/>
+</element>
+<element name="U$3" library="Custom" package="3528" value="3528LED" x="10" y="68" smashed="yes"/>
+<element name="U$4" library="Custom" package="3528" value="3528LED" x="30" y="68" smashed="yes"/>
+<element name="U$5" library="Custom" package="3528" value="3528LED" x="50" y="68" smashed="yes"/>
+<element name="U$6" library="Custom" package="3528" value="3528LED" x="70" y="68" smashed="yes"/>
+<element name="U$7" library="Custom" package="3528" value="3528LED" x="10" y="86" smashed="yes"/>
+<element name="U$8" library="Custom" package="3528" value="3528LED" x="30" y="86" smashed="yes"/>
+<element name="U$9" library="Custom" package="3528" value="3528LED" x="50" y="86" smashed="yes"/>
+<element name="U2" library="Custom" package="QFP80P900X900X120-32N" value="ATTINY828R-AU" x="41.52" y="20.11" smashed="yes" rot="MR180">
 <attribute name="MPN" value="ATTINY828R-AU" x="41.52" y="20.11" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="36.8718" y="13.2012" size="2.0828" layer="26" ratio="10" rot="SMR180"/>
 <attribute name="OC_FARNELL" value="2249850" x="41.52" y="20.11" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="OC_NEWARK" value="Unknown" x="41.52" y="20.11" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="PACKAGE" value="TQFP-32" x="41.52" y="20.11" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="SUPPLIER" value="ATMEL" x="41.52" y="20.11" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="35.7796" y="28.2634" size="2.0828" layer="28" ratio="10" rot="SMR180"/>
 </element>
-<element name="C1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="" x="57" y="24" rot="MR180">
+<element name="C1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="" x="57" y="24" smashed="yes" rot="MR180">
+<attribute name="NAME" x="55.73" y="22.73" size="1.27" layer="26" rot="MR180"/>
 <attribute name="SPICEMODEL" value="NONE" x="57" y="24" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="57" y="24" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="55.73" y="26.54" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="C2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="" x="64" y="20" rot="MR270">
+<element name="C2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="" x="64" y="20" smashed="yes" rot="MR270">
+<attribute name="NAME" x="62.73" y="21.27" size="1.27" layer="26" rot="MR270"/>
 <attribute name="SPICEMODEL" value="NONE" x="64" y="20" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="64" y="20" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="66.54" y="21.27" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="SV5" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA08-1" package3d_urn="urn:adsk.eagle:package:8343/1" value="" x="54" y="3" rot="R180">
+<element name="SV5" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA08-1" package3d_urn="urn:adsk.eagle:package:8343/1" value="" x="54" y="3" smashed="yes" rot="R180">
 <attribute name="MF" value="" x="54" y="3" size="0.7" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="54" y="3" size="0.7" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="64.16" y="1.349" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="OC_FARNELL" value="unknown" x="54" y="3" size="0.7" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="54" y="3" size="0.7" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="55.27" y="5.921" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 </elements>
 <signals>
@@ -1951,6 +2004,13 @@ design rules under a new name.</description>
 <wire x1="72.35" y1="13.35" x2="71" y2="12" width="0.4064" layer="16"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>

@@ -40,7 +40,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -145,10 +145,10 @@
 <wire x1="48" y1="98" x2="48" y2="96" width="0" layer="20"/>
 <wire x1="48" y1="96" x2="32" y2="96" width="0" layer="20"/>
 <wire x1="32" y1="96" x2="32" y2="98" width="0" layer="20"/>
-<dimension x1="-2" y1="86" x2="-2" y2="68" x3="-2" y3="77" textsize="1.778" layer="1"/>
-<dimension x1="-3" y1="68" x2="-3" y2="50" x3="-3" y3="59" textsize="1.778" layer="1"/>
-<dimension x1="-2" y1="50" x2="-2" y2="32" x3="-2" y3="41" textsize="1.778" layer="1"/>
-<dimension x1="-3" y1="32" x2="-3" y2="14" x3="-3" y3="23" textsize="1.778" layer="1"/>
+<dimension x1="-2" y1="86" x2="-2" y2="68" x3="-2" y3="77" textsize="1.778" layer="47"/>
+<dimension x1="-3" y1="68" x2="-3" y2="50" x3="-3" y3="59" textsize="1.778" layer="47"/>
+<dimension x1="-2" y1="50" x2="-2" y2="32" x3="-2" y3="41" textsize="1.778" layer="47"/>
+<dimension x1="-3" y1="32" x2="-3" y2="14" x3="-3" y3="23" textsize="1.778" layer="47"/>
 <text x="28" y="5" size="0.7" layer="51">GND VCC   SCK !RESET! MISO MOSI</text>
 <text x="68" y="5" size="0.7" layer="51">D-     D+    ID</text>
 <text x="57.4" y="23.7" size="0.7" layer="52" rot="MR0">C</text>
@@ -164,10 +164,12 @@
 <text x="32.2" y="88.5" size="0.7" layer="52" rot="MR0">T</text>
 <text x="12.2" y="88.5" size="0.7" layer="52" rot="MR0">T</text>
 <text x="14" y="9" size="1.4224" layer="52" rot="MR0">Charlie Tenn</text>
-<dimension x1="0" y1="103" x2="32" y2="103" x3="16" y3="103" textsize="1.4224" layer="1"/>
-<dimension x1="48" y1="103" x2="80" y2="103" x3="64" y3="103" textsize="1.4224" layer="1"/>
-<dimension x1="70" y1="98" x2="80" y2="98" x3="75" y3="98" textsize="1.4224" layer="1"/>
-<dimension x1="0" y1="98" x2="10" y2="98" x3="5" y3="98" textsize="1.4224" layer="1"/>
+<dimension x1="0" y1="103" x2="32" y2="103" x3="16" y3="103" textsize="1.4224" layer="47"/>
+<dimension x1="48" y1="103" x2="80" y2="103" x3="64" y3="103" textsize="1.4224" layer="47"/>
+<dimension x1="70" y1="98" x2="80" y2="98" x3="75" y3="98" textsize="1.4224" layer="47"/>
+<dimension x1="0" y1="98" x2="10" y2="98" x3="5" y3="98" textsize="1.4224" layer="47"/>
+<dimension x1="0" y1="-3" x2="80" y2="-3" x3="40" y3="-3" textsize="1.778" layer="47"/>
+<dimension x1="83" y1="0" x2="83" y2="100" x3="83" y3="50" textsize="1.778" layer="47"/>
 </plain>
 <libraries>
 <library name="wirepad" urn="urn:adsk.eagle:library:412">

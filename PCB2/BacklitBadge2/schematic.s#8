@@ -339,6 +339,7 @@ Micro-USB AB Receptacle, Bottom Mount, SMT, Lead-Free&lt;/a&gt; (&lt;a href="htt
 <rectangle x1="-0.95" y1="-4.175" x2="0.95" y2="-2.6" layer="29" rot="R180"/>
 <rectangle x1="-0.95" y1="0.25" x2="0.95" y2="2.05" layer="29"/>
 <rectangle x1="-0.95" y1="2.6" x2="0.95" y2="4.175" layer="29"/>
+<rectangle x1="-2.54" y1="-2.54" x2="-1.27" y2="2.54" layer="1"/>
 </package>
 </packages>
 <symbols>
